@@ -36,26 +36,25 @@ public class Laptop {
 		this.weight = s.nextDouble();;
 	}
 	
-	//Getter Method
 	public String getBrand() {
 		  return this.brand;
-	  }
+	}
 	
 	public String getColor() {
 		  return this.color;
-	  }
+	}
 	
 	public String getModel() {
 		  return this.model;
-	  }
+	}
 	
 	public String getScreen() {
 		  return this.screen;
-	  }
+	}
 	
 	public double getWeight() {
 		  return this.weight;
-	  }
+	}
 	
 	public void info() {
 		setBrand();

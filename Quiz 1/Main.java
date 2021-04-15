@@ -10,11 +10,8 @@ public class Main {
 		
 		Laptop asus = new Laptop();
 		
-		asus.getBrand();
-		asus.getColor();
-		asus.getModel();
-		asus.getScreen();
-		asus.getWeight();
+		asus.info();
+		System.out.println();
 		
 		System.out.println("Brand  : " + asus.getBrand());
 		System.out.println("Color  : " + asus.getColor());

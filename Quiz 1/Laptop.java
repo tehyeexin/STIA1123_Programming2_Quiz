@@ -1,6 +1,6 @@
 package Quiz1;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Laptop {
 	Scanner s = new Scanner(System.in);
@@ -11,32 +11,29 @@ public class Laptop {
 	String screen;
 	double weight;
 
-	//Setter Method
-	/*void setBrand() {
+	public void setBrand() {
 		System.out.println("Enter the brand : ");
-		int brand = s.nextInt();
-		System.out.println("The brand is " + brand);
-	}*/
-	
-	public void setBrand(String brand) {
-		System.out.println("Enter the brand : ");
-		this.brand = brand;
+		this.brand = s.next();
 	}
 	
-	public void setColor(String color) {
-		this.color = color;
+	public void setColor() {
+		System.out.println("Enter the color : ");
+		this.color = s.next();;
 	}
 	
-	public void setModel(String model) {
-		this.model = model;
+	public void setModel() {
+		System.out.println("Enter the model : ");
+		this.model = s.next();;
 	}
 	
-	public void setScreen(String screen) {
-		this.screen = screen;
+	public void setScreen() {
+		System.out.println("Enter the screen : ");
+		this.screen = s.next();;
 	}
 	
-	public void setWeight(double weight) {
-		this.weight = weight;
+	public void setWeight() {
+		System.out.println("Enter the weight : ");
+		this.weight = s.nextDouble();;
 	}
 	
 	//Getter Method
@@ -59,6 +56,14 @@ public class Laptop {
 	public double getWeight() {
 		  return this.weight;
 	  }
+	
+	public void info() {
+		setBrand();
+		setColor();
+		setModel();
+		setScreen();
+		setWeight();
+	}
 
 
 
